@@ -1,9 +1,11 @@
 # Global
 .vscode/
+driver/**/**
 
 # py
 *.pyc
 __pycache__
+*.log
 
 # dotenv
 .env
