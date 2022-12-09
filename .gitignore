@@ -1,0 +1,11 @@
+# Global
+.vscode/
+
+# py
+*.pyc
+__pycache__
+
+# dotenv
+.env
+.env.*
+!.env.example
