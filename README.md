@@ -6,8 +6,9 @@ Ig scrapy coco is a project to get the information of a any public user on insta
 ## Getting started
 ### Develop
 ```sh
-python src/main.py
+./run.sh
 ```
+To test, send a **GET** request to `http://127.0.0.1:8080/api/users/{username}` and see what happens
 Enjoy coding!
 
 ### Prod
