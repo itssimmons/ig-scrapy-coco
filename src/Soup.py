@@ -20,4 +20,7 @@ class Soup:
     def find_many(self, tag: str, class_name: str):
         classes = Helpers.join_by('.', class_name)
         return self.body.select(f'{tag}.{classes}')
+
+    def find(self, tag: str, class_name: str):
+        return self.body.find(tag, class_=class_name)
         
