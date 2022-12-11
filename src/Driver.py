@@ -14,6 +14,7 @@ class Driver:
         try:
             browser.get(BASE_URL)
             Helpers.await_page(browser)
+            sleep(0.5)
 
             browser.find_element(By.XPATH, '//input[@name="username"]').send_keys(IG_USER)
             browser.find_element(By.XPATH, '//input[@name="password"]').send_keys(IG_PASS)
@@ -22,6 +23,7 @@ class Driver:
 
             browser.get(url)
             Helpers.await_page(browser)
+            sleep(2)
 
             # not found page
             browser.find_element(By.XPATH, '//h2[@class="_aacl _aacr _aacw _aacx _aad6 _aadb"]')
@@ -30,4 +32,3 @@ class Driver:
             raise TimeoutException('Loading took to much time!')
         except NoSuchElementException:
             return browser.page_source
-
