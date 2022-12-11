@@ -1,2 +1,2 @@
 #!/bin/bash
-python src/main.py
+python src/__init__.py
